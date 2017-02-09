@@ -8,7 +8,7 @@
   "typings": "index.d.ts",
   "directories": {},
   "dependencies": {
-    "@types/node": "^6.9.4"
+    "@types/node": "^6"
   },
   "devDependencies": {}
 }
