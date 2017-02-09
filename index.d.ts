@@ -49,7 +49,8 @@ declare module Bitcore {
     constructor(message: any);
     verify(message: string, signature: string);
     sign(privateKey: PrivateKey): string;
-  }}
+  }
+}
 
 
 declare namespace Bitcore.encoding {
@@ -59,3 +60,11 @@ declare namespace Bitcore.encoding {
   }
 }
 
+declare namespace Bitcore.crypto {
+  namespace Hash {
+    function sha256(buf: Buffer): Buffer;
+  }
+  namespace Random {
+    function getRandomBuffer(size: number): Buffer;
+  }
+}
